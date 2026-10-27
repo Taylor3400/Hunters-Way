@@ -5,6 +5,7 @@ A mobile-friendly web app that shows where and when I can legally hunt in Florid
 ## Core features
 - Google Maps in satellite/hybrid view, with a topo/terrain toggle
 - Florida FWC boundary layers: Wildlife Management Areas (WMAs), WMA entrances, hunting zones (A, B, C, D) and Deer Management Units (DMUs)
+- Filter by species, zone/DMU, WMA, season type and date to find where and when you can hunt
 - Tap any spot: show which WMA or zone/DMU it is in, what species are in season there today, season type, and a link to the official FWC source
 - Live weather for the tapped spot from the National Weather Service API (api.weather.gov)
 - Use my phone GPS to show my location and the zone I am standing in
@@ -14,10 +15,15 @@ A mobile-friendly web app that shows where and when I can legally hunt in Florid
 - Otherwise, show the zone/DMU seasons from a local seasons data file
 - Never present our data as the final word: always link to myfwc.com and show when the data was last updated
 
-## My details
-- Home zone: [YOUR ZONE, e.g. Zone C]
-- DMU: [YOUR DMU, e.g. DMU-C3]
-- Main species: [e.g. deer, turkey, hogs]
+## Coverage and filtering
+- Covers all of Florida: every hunting zone (A, B, C, D), every DMU and every WMA. No single "home zone".
+- Covers all huntable species in the seasons data (e.g. deer, turkey, wild hog, small game, migratory birds, waterfowl, alligator, furbearers), not just a few.
+- Users filter to find what they want to do:
+  - by species (one or several)
+  - by zone and DMU, and by WMA
+  - by season type (archery, crossbow, muzzleloader, general gun, etc.)
+  - by date ("in season today" or a chosen date)
+- The map highlights the areas that match the active filters, and a list view shows the matching seasons/areas with FWC source links.
 
 ## Data sources
 | Data | Source | Notes |
